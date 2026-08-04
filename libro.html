@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💙 Nuestro Libro💙</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/libro.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ornament">🌙 ✦ ✦ ✦</div>
+
+        <div class="header">
+            <h1>Pequeña Historia</h1>
+            <div class="divider-line"></div>
+            <p class="subtitle">"Donde cada página muestra momentos de nuestra historia"</p>
+        </div>
+
+        <!-- Reproductor de Música -->
+        <div class="music-player">
+            <span class="music-label">♫ Esta es una cancion que me gusta mucho, dije que te la mostraria, y es, de esta manera 
+                 espero que te guste y veas la traduccion y entiendas cada estrofa ♫</span>
+            <audio controls loop>
+                <source src="music/pami - all in.mp3" type="audio/mpeg">
+                Tu navegador no soporta el audio.
+            </audio>
+        </div>
+
+        <!-- Controles -->
+        <div class="book-controls">
+            <button onclick="previousPage()">← Anterior</button>
+            <span class="page-counter" id="pageCounter">Página 1 de 5</span>
+            <button onclick="nextPage()">Siguiente →</button>
+        </div>
+
+<!-- ===================== PÁGINA 1 ===================== -->
+<div class="page active" data-page="0">
+    <div class="page-image">
+        <img src="img/1.jpg" alt="Noche estrellada">
+        <div class="image-caption">
+            Me gusta mucho esta fotografía. Aunque en ese momento solo éramos “amigos”, sentí que había algo diferente entre nosotros, y creo que por eso tiene un lugar tan especial en mi corazón.
+        </div>
+    </div>
+
+    <div class="page-title">
+        Creo que aquí comenzó la historia de todo lo que vendría después
+    </div>
+
+    <div class="page-content">
+        <p>
+            Esa noche fue muy especial para mí. No esperaba que pasara, pero en el fondo me gustaba imaginar la posibilidad. Sentí muchas emociones: ilusión, nervios, esperanza y miedo. Pensé que quizá sería el día en que nuestra historia cambiaría, aunque también recordaba la situación en la que estábamos. Aun así, tenerte conmigo esa noche fue uno de los regalos más bonitos que la vida me dio.
+        </p>
+
+        <div class="page-dedication">
+            “A tu lado, las noches se vuelven eternas y cálidas, y esa fue una de las más bonitas.”
+        </div>
+    </div>
+
+    <div class="page-number">— 1 —</div>
+</div>
+
+
+<!-- ===================== PÁGINA 2 ===================== -->
+<div class="page" data-page="1">
+    <div class="page-image">
+        <img src="img/2.jpg" alt="Momento feliz">
+        <div class="image-caption">
+            Esta fotografía me encanta. Se nota en mi sonrisa lo feliz que estaba.
+        </div>
+    </div>
+
+    <div class="page-title">
+        Uno de los días más bonitos, cuando empezó algo que sabíamos que no sería fácil, pero tampoco imposible
+    </div>
+
+    <div class="page-content">
+        <p>
+            Recuerdo perfectamente ese día. Me sentí importante, querida y tomada en cuenta. Siempre había deseado conocer a tu familia, aunque me daba miedo y muchos nervios. Aun así fui, porque era lo que realmente quería, y más aún sabiendo que estaba contigo de manera oficial. Ese día me hizo sentir parte de algo especial.
+        </p>
+
+        <div class="page-dedication">
+            “Contigo, el tiempo se detiene en los momentos más felices.”
+        </div>
+    </div>
+
+    <div class="page-number">— 2 —</div>
+</div>
+
+
+<!-- ===================== PÁGINA 3 ===================== -->
+<div class="page" data-page="2">
+    <div class="page-image">
+        <img src="img/3.jpg" alt="Nosotros">
+        <div class="image-caption">
+            La verdad… aquí nos vemos muy lindos, ¿no?
+        </div>
+    </div>
+
+    <div class="page-title">
+        Un día cualquiera, que contigo se volvió extraordinario
+    </div>
+
+    <div class="page-content">
+        <p>
+            Te confieso que en esos días ya sabía que lo nuestro no sería sencillo. Sin embargo, cada momento a tu lado me hacía entender cuánto quería estar contigo. Me costaba demostrarlo, pero poco a poco he aprendido a hacerlo, porque realmente quiero que seas tú. Contigo me siento tranquila, feliz y con ganas de seguir construyendo algo bonito.
+        </p>
+
+        <div class="page-dedication">
+            “Cada día contigo es un pequeño avance lleno de esperanza.”
+        </div>
+    </div>
+
+    <div class="page-number">— 3 —</div>
+</div>
+
+
+<!-- ===================== PÁGINA 4 ===================== -->
+<div class="page" data-page="3">
+    <div class="page-image">
+        <img src="img/4.jpg" alt="Cumpleaños">
+        <div class="image-caption">
+            Este día fue especial para ti, y quise demostrarte con hechos cuánto me importas.
+        </div>
+    </div>
+
+    <div class="page-title">
+        Tu primer cumpleaños especial para mí
+    </div>
+
+    <div class="page-content">
+        <p>
+            Era la primera vez que hacía algo así. Te confieso que tenía nervios y un poco de miedo, pero reuní valor porque siempre soñé con poder hacer sentir especial a la persona que amo. Cada detalle nació del cariño que siento por ti y de las ganas de verte sonreír.
+        </p>
+
+        <div class="page-dedication">
+            “Espero que haya sido el primero de muchos cumpleaños llenos de amor y recuerdos bonitos.”
+        </div>
+    </div>
+
+    <div class="page-number">— 4 —</div>
+</div>
+
+
+<!-- ===================== PÁGINA 5 ===================== -->
+<div class="page" data-page="4">
+    <div class="page-image">
+        <img src="img/5.jpg" alt="Felicidad juntos">
+        <div class="image-caption">
+            Una foto muy linda, llena de felicidad y de un momento que guardaré siempre.
+        </div>
+    </div>
+
+    <div class="page-title">
+        Un día inolvidable, uno de esos recuerdos que siempre quise vivir
+    </div>
+
+    <div class="page-content">
+        <p>
+            Ese día fue maravilloso. Fue un plan diferente y me hizo inmensamente feliz. Durante mucho tiempo imaginé compartir algo así con alguien especial, y por fin lo viví contigo. Amar lo que hacía y amar a la persona que estaba a mi lado hizo que todo se sintiera aún más perfecto.
+        </p>
+
+        <div class="page-dedication">
+            “Tú eres uno de los momentos más bonitos de mi vida.”
+        </div>
+    </div>
+
+    <div class="page-number">— 5 —</div>
+</div>
+
+
+<!-- ===================== PÁGINA 6 (DEDICATORIA FINAL) ===================== -->
+<div class="page" data-page="5">
+    <div class="page-image">
+        <img src="img/6.jpg" alt="Dedicatoria final">
+        <div class="image-caption">
+            Nuestra historia sigue escribiéndose cada día.
+        </div>
+    </div>
+
+    <div class="page-title">
+        Mi dedicatoria final para ti 💙
+    </div>
+
+    <div class="page-content">
+        <p>
+            Quise terminar este libro hablándote desde el corazón. La canción “All In” me recuerda mucho a nosotros, porque habla de entregarse por completo, incluso cuando no todo es fácil. Y eso es exactamente lo que siento.
+        </p>
+
+        <p>
+            En estos seis meses hemos vivido momentos hermosos, pero también peleas, silencios, dudas, miedos y un sinfín de situaciones que pudieron alejarnos. Sin embargo, aquí seguimos. Tal vez no somos perfectos, pero hemos aprendido a quedarnos, a hablar, a entendernos y a avanzar juntos.
+        </p>
+
+        <p>
+            Cada día me convenzo más de que vale la pena intentarlo contigo. Hay días sencillos que, por estar a tu lado, se vuelven especiales. Hay sonrisas tuyas que cambian mi ánimo por completo, y hay abrazos tuyos que se sienten como hogar.
+        </p>
+
+        <p>
+            Cuando la canción dice <em>“I’d go all the way for you”</em>, pienso en todo lo que estaría dispuesta a hacer por esta relación. Cuando dice <em>“I’d rather lose it all if it ain’t you and I”</em>, entiendo que lo más valioso para mí no son las cosas, sino lo que construimos juntos. Y cuando termina diciendo <em>“I’m giving you all in”</em>, siento que describe exactamente mi manera de amarte: con todo, sin reservas y con el corazón completo.
+        </p>
+
+        <p>
+            No sé qué nos espera en el futuro, pero sí sé lo que siento hoy. Y hoy puedo decirte, con toda sinceridad, que te amo. Te amo en los días buenos y en los difíciles. Te amo en nuestras risas y en nuestras diferencias. Te amo porque contigo quiero seguir creciendo, aprendiendo y soñando.
+        </p>
+
+        <p>
+            Gracias por estos seis meses, por cada recuerdo, por cada esfuerzo y por cada paso que hemos dado juntos. Ojalá este sea solo el comienzo de una historia mucho más larga.
+        </p>
+
+        <div class="page-dedication">
+            “Te amo profundamente, y cada día estoy más segura de que quiero seguir escribiendo mi historia contigo.”
+        </div>
+    </div>
+
+    <div class="page-number">— 6 —</div>
+</div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/efectos.js"></script>
+    <script src="js/libro.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&family=Lato:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #c2e9fb 0%, #a1c4fd 50%, #d4fcff 100%);
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
+                      radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.9), transparent),
+                      radial-gradient(3px 3px at 50px 160px, #ffffff, transparent);
+    background-size: 200px 200px;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.ornament {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 28px;
+    letter-spacing: 10px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.divider-line {
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent);
+    margin: 15px auto;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 18px;
+    color: rgba(42, 75, 124, 0.3);
+    font-size: 0.8em;
+    letter-spacing: 3px;
+}
